@@ -48,7 +48,9 @@ const App = () => {
       {/*  </>*/}
       {/*</LazyShow>*/}
       <Analytics />
-        rtgktmg
+        <div style={{textAlign: 'center'}}>
+            Контакты в доработке
+        </div>
     </div>
   );
 };
