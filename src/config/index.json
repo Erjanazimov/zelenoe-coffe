@@ -1,0 +1,131 @@
+{
+  "company": {
+    "name": "React landing page 2021",
+    "logo": "/assets/images/logo.png"
+  },
+  "navigation": [
+    {
+      "name": "Зеленый кофе",
+      "href": "product"
+    },
+    {
+      "name": "Услуги",
+      "href": "features"
+    },
+    {
+      "name": "О компании",
+      "href": "about"
+    },
+    {
+      "name": "Контакты",
+      "href": "about"
+    }
+  ],
+  "callToAction": {
+    "text": "Get started",
+    "href": "#"
+  },
+  "mainHero": {
+    "title": "Поставки зеленого кофе",
+    "subtitle": "от мешка до контейнера",
+    "description": "Зеленый кофе — от плантаций до вашего города, с заботой о качестве в каждом зерне.",
+    "img": "https://cocoa.com.ua/wp-content/uploads/2019/12/Santos-Brazil.jpg",
+    "primaryAction": {
+      "text": "Оставить заявку",
+      "href": "#"
+    },
+    "secondaryAction": {
+      "text": "Email us",
+      "href": "mailto:issaafakattan@gmail.com?subject=I like react landing page!"
+    }
+  },
+  "product": {
+    "title": "Зеленый кофе",
+    "items": [
+      {
+        "title": "Зеленый кофе",
+        "description": "Стабильность и предсказуемость поставок.\nРешение любых задач в области вкуса.\nЧетыре континента качественного кофе.",
+        "img": "https://gurme.ru/wa-data/public/shop/products/34/09/934/images/143/143.970.jpg"
+      },
+      {
+        "title": "Ростеры",
+        "description": "Профессиональные ростеры BESCA и узкоспециализированный софт CROPSTER для российской индустрии обжарки кофе: консультации, обслуживание, ремонт в режиме онлайн и оффлайн, а также наиболее ходовые модели BESCA в нашем Тренинг-центре.",
+        "img": "https://www.shop.tatte.kz/image/cache/catalog/Blogs/860-869/866-rosteri-dlya-kofe-chem-otlochayautsya-kakie-bivayut-820x540.jpg"
+      }
+    ]
+  },
+  "features": {
+    "title": "О компании",
+    "subtitle": "Зеленый кофе – натуральный источник энергии и здоровья",
+    "description": "Наша компания предлагает зеленый кофе высочайшего качества, богатый антиоксидантами и натуральными питательными веществами. Зеленый кофе не подвергается обжарке, благодаря чему сохраняет уникальный состав и полезные свойства. Мы заботимся о каждом этапе производства, начиная с выращивания зерен на лучших плантациях и заканчивая доставкой продукта к вашему столу. Откройте для себя природную пользу зеленого кофе – идеальный выбор для тех, кто стремится поддерживать энергию, здоровье и хорошее самочувствие.",
+    "items": []
+  },
+  "pricing": {
+    "title": "Pricing",
+    "items": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "priceDetails": "for one user",
+        "features": [
+          "1 user",
+          "Basic Support",
+          "1 GB of storage",
+          "Email support"
+        ]
+      },
+      {
+        "name": "Pro",
+        "price": "$15",
+        "priceDetails": "per user",
+
+        "features": [
+          "5 users",
+          "Priority Support",
+          "10 GB of storage",
+          "Phone and Email support"
+        ]
+      },
+      {
+        "name": "Enterprise",
+        "price": "$29",
+        "priceDetails": "per user",
+        "features": [
+          "50 users",
+          "24/7 Support",
+          "100 GB of storage",
+          "Phone and Email support"
+        ]
+      }
+    ]
+  },
+  "about": {
+    "sections": [
+      {
+        "name": "Something",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        "name": "Something",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        "name": "Something",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        "name": "Something",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      }
+    ],
+    "socialMedia": {
+      "github": "https://github.com/issaafalkattan",
+      "twitter": "https://twitter.com/issaafkattan",
+      "linkedin": "https://www.linkedin.com/in/issaaf-kattan/"
+    }
+  }
+}
