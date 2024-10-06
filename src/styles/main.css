@@ -26,3 +26,22 @@ a:hover {
 .content ul {
   @apply my-6;
 }
+
+.usd_block {
+  position: fixed;
+  top: 20px;
+  right: 10px;
+  background: rgba(5, 150, 105, var(--tw-text-opacity));
+  color: #fff!important;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+@media screen and (max-width: 991px) {
+  .usd_block {
+    position: absolute;
+    top: 20px;
+    right: initial;
+    left: 195px;
+  }
+}

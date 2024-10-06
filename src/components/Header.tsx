@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 
 import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
@@ -7,9 +7,16 @@ import { Link } from 'react-scroll';
 import config from '../config/index.json';
 
 const Menu = () => {
-  const { navigation, company, callToAction } = config;
-  const { name: companyName, logo } = company;
+  const { navigation, company } = config;
+  const { name: companyName } = company;
+  const [usd, setUsd] = useState<number | null>(null)
+  useEffect(() => {
+    fetch("https://www.cbr-xml-daily.ru/daily_json.js")
+      .then(res => res.json())
+      .then(data => setUsd(data?.Valute?.USD?.Value || null))
+  }, []);
 
+  console.log(usd);
   return (
     <>
       <svg
@@ -32,7 +39,7 @@ const Menu = () => {
               <div className="flex items-center justify-between w-full md:w-auto">
                 <a href="#">
                   <span className="sr-only">{companyName}</span>
-                  <img alt="logo" src={logo} width={160} height={40}/>
+                  <img alt="logo" src="https://i.ibb.co/syGSdqW/cofexim.png" width={160} height={40} />
                 </a>
                 <div className="-mr-2 flex items-center md:hidden">
                   <Popover.Button
@@ -53,9 +60,10 @@ const Menu = () => {
                   duration={1000}
                   key={item.name}
                   style={{
-                    whiteSpace: "nowrap",
-                    overflow: "hidden",
-                    textOverflow: 'ellipsis' }}
+                    whiteSpace: 'nowrap',
+                    overflow: 'hidden',
+                    textOverflow: 'ellipsis'
+                  }}
                   to={item.href}
                   className="font-medium text-gray-500 hover:text-gray-900"
                 >
@@ -64,9 +72,12 @@ const Menu = () => {
               ))}
 
             </div>
+
           </nav>
         </div>
-
+        <div className="font-medium text-gray-500 hover:text-gray-900 usd_block">
+          $1 = {usd} ₽
+        </div>
         <Transition
           as={Fragment}
           enter="duration-150 ease-out"
@@ -85,7 +96,7 @@ const Menu = () => {
             >
               <div className="px-5 pt-4 flex items-center justify-between">
                 <div>
-                  <img className="h-8 w-auto" src={logo} alt="" />
+                  <img className="h-8 w-auto" src="https://i.ibb.co/syGSdqW/cofexim.png" alt="" />
                 </div>
                 <div className="-mr-2">
                   <Popover.Button
@@ -111,12 +122,7 @@ const Menu = () => {
                   </Link>
                 ))}
               </div>
-              <a
-                href={callToAction.href}
-                className={`block w-full px-5 py-3 text-center font-medium text-primary bg-gray-50 hover:bg-gray-100`}
-              >
-                {callToAction.text}
-              </a>
+
             </div>
           </Popover.Panel>
         </Transition>

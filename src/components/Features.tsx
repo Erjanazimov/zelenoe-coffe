@@ -10,7 +10,7 @@ const Features = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
           <h2
-            className={`text-base text-primary font-semibold tracking-wide uppercase`}
+            className={`text-base text-green-600 font-semibold tracking-wide uppercase`}
           >
             {title}
           </h2>
