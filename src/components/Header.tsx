@@ -16,7 +16,6 @@ const Menu = () => {
       .then(data => setUsd(data?.Valute?.USD?.Value || null))
   }, []);
 
-  console.log(usd);
   return (
     <>
       <svg

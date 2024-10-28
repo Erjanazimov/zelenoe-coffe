@@ -9,11 +9,11 @@
       "href": "product"
     },
     {
-      "name": "Услуги",
+      "name": "О компании",
       "href": "features"
     },
     {
-      "name": "О компании",
+      "name": "Услуги",
       "href": "about"
     },
     {
@@ -46,11 +46,6 @@
         "title": "Зеленый кофе",
         "description": "Стабильность и предсказуемость поставок.\nРешение любых задач в области вкуса.\nЧетыре континента качественного кофе.",
         "img": "https://gurme.ru/wa-data/public/shop/products/34/09/934/images/143/143.970.jpg"
-      },
-      {
-        "title": "Ростеры",
-        "description": "Профессиональные ростеры BESCA и узкоспециализированный софт CROPSTER для российской индустрии обжарки кофе: консультации, обслуживание, ремонт в режиме онлайн и оффлайн, а также наиболее ходовые модели BESCA в нашем Тренинг-центре.",
-        "img": "https://www.shop.tatte.kz/image/cache/catalog/Blogs/860-869/866-rosteri-dlya-kofe-chem-otlochayautsya-kakie-bivayut-820x540.jpg"
       }
     ]
   },
@@ -78,7 +73,6 @@
         "name": "Pro",
         "price": "$15",
         "priceDetails": "per user",
-
         "features": [
           "5 users",
           "Priority Support",

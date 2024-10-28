@@ -1,7 +1,7 @@
 import React from 'react';
 
 // import About from '../components/About';
-import Analytics from '../components/Analytics';
+import About from '../components/About';
 import Canvas from '../components/Canvas';
 import Features from '../components/Features';
 import Header from '../components/Header';
@@ -38,19 +38,16 @@ const App = () => {
           <Canvas />
         </>
       </LazyShow>
-      {/*<LazyShow>*/}
-      {/*  /!*<Pricing />*!/*/}
-      {/*</LazyShow>*/}
-      {/*<LazyShow>*/}
-      {/*  <>*/}
-      {/*    <Canvas />*/}
-      {/*    /!*<About />*!/*/}
-      {/*  </>*/}
-      {/*</LazyShow>*/}
-      <Analytics />
-        <div style={{textAlign: 'center'}}>
-            Контакты в доработке
-        </div>
+      <LazyShow>
+        <>
+          {/*<Canvas />*/}
+          <About />
+        </>
+      </LazyShow>
+      {/*<Analytics />*/}
+      {/*  <div style={{textAlign: 'center'}}>*/}
+      {/*      Контакты в доработке*/}
+      {/*  </div>*/}
     </div>
   );
 };
